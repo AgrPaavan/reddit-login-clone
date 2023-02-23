@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="512x512"
+      href="https://www.redditstatic.com/accountmanager/favicon/favicon-512x512.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="192x192"
+      href="https://www.redditstatic.com/accountmanager/favicon/favicon-192x192.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://www.redditstatic.com/accountmanager/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://www.redditstatic.com/accountmanager/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://www.redditstatic.com/accountmanager/favicon/apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="mask-icon"
+      href="https://www.redditstatic.com/accountmanager/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>reddit.com: Log in</title>
+  </head>
+  <body>
+    <div
+      class="flex flex-row items-center justify-start font-sans text-[#1a1a1b]"
+    >
+      <div
+        class="h-screen min-h-[430px] w-36 bg-[url('./img/sideStep.png')] bg-no-repeat bg-cover"
+      ></div>
+      <div class="flex flex-col p-6">
+        <h3 class="text-lg font-medium">Log in</h3>
+        <p class="text-xs mt-2 mb-12 leading-[18px] font-normal">
+          By continuing, you agree to our
+          <a
+            href="https://www.redditinc.com/policies/user-agreement"
+            class="text-[#0079d3]"
+            target="_blank"
+          >
+            User Agreement
+          </a>
+          and
+          <a
+            href="https://www.redditinc.com/policies/privacy-policy"
+            class="text-[#0079d3]"
+            target="_blank"
+          >
+            Privacy Policy.
+          </a>
+        </p>
+        <div
+          class="text-sm flex flex-row items-center justify-between border border-solid border-[#dadce0] rounded-[20px] my-1 w-72 h-11 px-3 hover:cursor-pointer hover:scale-105 duration-200"
+        >
+          <div class="h-[18px] mr-2 w-[18px]">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 48 48"
+              class="LgbsSe-Bz112c"
+            >
+              <g>
+                <path
+                  fill="#EA4335"
+                  d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"
+                ></path>
+                <path
+                  fill="#4285F4"
+                  d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"
+                ></path>
+                <path
+                  fill="#FBBC05"
+                  d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"
+                ></path>
+                <path
+                  fill="#34A853"
+                  d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"
+                ></path>
+                <path fill="none" d="M0 0h48v48H0z"></path>
+              </g>
+            </svg>
+          </div>
+          <p class="font-medium">Continue with Google</p>
+          <p class="text-white">.</p>
+        </div>
+        <div
+          class="text-sm flex flex-row items-center justify-between border border-solid border-[#dadce0] rounded-[20px] my-1 w-72 h-11 px-3 hover:cursor-pointer hover:scale-105 duration-200"
+        >
+          <div class="h-[18px] mr-2 w-[18px]">
+            <img
+              src="https://www.redditstatic.com/accountmanager/56133cfff407f8c1fb8694b4ef00975c.svg"
+              alt=""
+              class="h-full w-full"
+            />
+          </div>
+          <p class="font-medium">Continue with Apple</p>
+          <p class="text-white">.</p>
+        </div>
+        <div class="flex flex-row items-center justify-between my-7 w-[280px]">
+          <span class="border border-solid border-[#edeff1] w-2/5"></span>
+          <span class="text-sm font-medium text-[#878a8c]">OR</span>
+          <span class="border border-solid border-[#edeff1] w-2/5"></span>
+        </div>
+        <form class="flex flex-col items-start justify-center w-[280px]">
+          <input
+            type="text"
+            id="loginUsername"
+            name="username"
+            placeholder="USERNAME"
+            class="h-[48px] border border-solid bg-[#fcfcfb] w-full pt-[22px] pb-[10px] px-3 my-2 rounded-[4px] placeholder:text-[10px] placeholder:font-semibold placeholder:text-[#a5a4a4] placeholder:leading-3"
+          />
+          <!-- <label
+            for="loginUsername"
+            class="text-xs font-semibold relative text-[#a5a4a4] uppercase z-10 bottom-8 left-3 hover:bottom-12 duration-200"
+            >Username</label
+						> -->
+          <input
+            type="text"
+            id="loginPassword"
+            name="password"
+            placeholder="PASSWORD"
+            class="h-[48px] border border-solid bg-[#fcfcfb] w-full pt-[22px] pb-[10px] px-3 my-2 rounded-[4px] placeholder:text-[10px] placeholder:font-semibold placeholder:text-[#a5a4a4] placeholder:leading-3"
+          />
+          <button
+            class="text-white text-sm font-semibold min-h-[35px] max-w-[392px] bg-[#0079d3] w-[280px] h-6 rounded-[4px] border-none outline-none cursor-pointer py-1 px-2 my-2"
+          >
+            LOG IN
+          </button>
+        </form>
+        <p class="mb-[20px] text-xs font-normal">
+          Forgot your
+          <a href="https://www.reddit.com/username" class="text-[#0079d3]">
+            username
+          </a>
+          or
+          <a href="https://www.reddit.com/password" class="text-[#0079d3]">
+            password?
+          </a>
+        </p>
+        <p class="text-xs font-normal mt-2">
+          New to Reddit?
+          <a
+            href="https://www.reddit.com/account/register/"
+            class="font-semibold text-[#0079d3]"
+          >
+            SIGN UP
+          </a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
